@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.newpipe">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".EnglistActivity"
+            android:label="Holloywood Singers"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="com.example.android.PARENT_ACTIVITY"
+                android:value="com.example.android.MainActivity"/>
+
+        </activity>
+
+        <activity android:name=".HindiActivity"
+            android:label="Bolloywood Singers"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="com.example.android.PARENT_ACTIVITY"
+                android:value="com.example.android.MainActivity"/>
+
+
+        </activity>
+
+        <activity android:name=".Charlie"
+            android:label="Songs Of Charlie"
+            android:parentActivityName=".EnglistActivity">
+
+            <meta-data android:name="com.example.android.PARENT_ACTIVITY"
+                android:value="com.example.android.MainActivity" />
+        </activity>
+
+        <activity android:name=".GreenDay"
+            android:label="Songs of Green Day"
+            android:parentActivityName=".EnglistActivity">
+            <meta-data android:name="com.example.android.PARENT_ACTIVITY"
+                android:value="com.example.android.MainActivity"/>
+        </activity>
+
+        <activity android:name=".Justin"
+            android:label="Songs of Justin"
+            android:parentActivityName=".EnglistActivity">
+            <meta-data android:name="com.example.android.PARENT_ACTIVITY"
+                android:value="com.example.android.MainActivity"/>
+        </activity>
+
+        <activity android:name=".Shakira"
+            android:label="Songs of Shakira"
+            android:parentActivityName=".EnglistActivity">
+            <meta-data android:name="com.example.android.PARENT_ACTIVITY"
+                android:value="com.example.android.MainActivity"/>
+        </activity>
+
+        <activity android:name=".Ed_Sheeran"
+            android:label="Songs of Ed_sheeran"
+            android:parentActivityName=".EnglistActivity">
+            <meta-data android:name="com.example.android.PARENT_ACTIVITY"
+                android:value="com.example.android.MainActivity"/>
+        </activity>
+
+
+        <activity android:name=".ArjitSingh"
+            android:label="Songs of ArjitSingh"
+            android:parentActivityName=".HindiActivity">
+            <meta-data android:name="com.example.android.PARENT_ACTIVITY"
+                android:value="com.example.android.MainActivity"/>
+        </activity>
+
+        <activity android:name=".AtifAslam"
+            android:label="Songs of Atif Aslam"
+            android:parentActivityName=".HindiActivity">
+            <meta-data android:name="com.example.android.PARENT_ACTIVITY"
+                android:value="com.example.android.MainActivity"/>
+        </activity>
+
+        <activity android:name=".HoneySingh"
+            android:label="Songs of Honey Singh"
+            android:parentActivityName=".HindiActivity">
+            <meta-data android:name="com.example.android.PARENT_ACTIVITY"
+                android:value="com.example.android.MainActivity"/>
+        </activity>
+
+        <activity android:name=".ArmaanMalik"
+            android:label="Songs of Armaan Malik"
+            android:parentActivityName=".HindiActivity">
+            <meta-data android:name="com.example.android.PARENT_ACTIVITY"
+                android:value="com.example.android.MainActivity"/>
+        </activity>
+
+        <activity android:name=".OtherHindi"
+            android:label="Songs of Other Hindi"
+            android:parentActivityName=".HindiActivity">
+            <meta-data android:name="com.example.android.PARENT_ACTIVITY"
+                android:value="com.example.android.MainActivity"/>
+        </activity>
+
+
+
+    </application>
+
+</manifest>
