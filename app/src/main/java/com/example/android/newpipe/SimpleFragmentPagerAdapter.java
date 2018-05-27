@@ -10,7 +10,7 @@ import android.support.v4.view.PagerAdapter;
 import android.view.View;
 
 class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
-    String[] songs = {"hindi" , "englist"};
+    String[] songs = {"hindi" , "english"};
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
 

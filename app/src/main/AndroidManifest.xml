@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".EnglistActivity"
+        <activity android:name=".EnglishActivity"
             android:label="Holloywood Singers"
             android:parentActivityName=".MainActivity">
 
@@ -39,7 +39,7 @@
 
         <activity android:name=".Charlie"
             android:label="Songs Of Charlie"
-            android:parentActivityName=".EnglistActivity">
+            android:parentActivityName=".EnglishActivity">
 
             <meta-data android:name="com.example.android.PARENT_ACTIVITY"
                 android:value="com.example.android.MainActivity" />
@@ -47,28 +47,28 @@
 
         <activity android:name=".GreenDay"
             android:label="Songs of Green Day"
-            android:parentActivityName=".EnglistActivity">
+            android:parentActivityName=".EnglishActivity">
             <meta-data android:name="com.example.android.PARENT_ACTIVITY"
                 android:value="com.example.android.MainActivity"/>
         </activity>
 
         <activity android:name=".Justin"
             android:label="Songs of Justin"
-            android:parentActivityName=".EnglistActivity">
+            android:parentActivityName=".EnglishActivity">
             <meta-data android:name="com.example.android.PARENT_ACTIVITY"
                 android:value="com.example.android.MainActivity"/>
         </activity>
 
         <activity android:name=".Shakira"
             android:label="Songs of Shakira"
-            android:parentActivityName=".EnglistActivity">
+            android:parentActivityName=".EnglishActivity">
             <meta-data android:name="com.example.android.PARENT_ACTIVITY"
                 android:value="com.example.android.MainActivity"/>
         </activity>
 
         <activity android:name=".Ed_Sheeran"
             android:label="Songs of Ed_sheeran"
-            android:parentActivityName=".EnglistActivity">
+            android:parentActivityName=".EnglishActivity">
             <meta-data android:name="com.example.android.PARENT_ACTIVITY"
                 android:value="com.example.android.MainActivity"/>
         </activity>
