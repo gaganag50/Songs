@@ -32,7 +32,7 @@ public class HindiFragment extends android.support.v4.app.Fragment {
         singers.add(new Singer("Other", R.drawable.others));
 
 
-        SingerAdapter singerAdapter = new SingerAdapter(getActivity(), singers);
+        SingerAdapter singerAdapter = new SingerAdapter(getActivity(), singers , R.color.hindi);
         final ListView listView = (ListView) rootView.findViewById(R.id.listview);
         listView.setAdapter(singerAdapter);
 

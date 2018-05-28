@@ -33,7 +33,6 @@
 
         app:tabIndicatorColor="@color/tab_color"
         app:tabMode="fixed"
-        android:background="@color/tab_color"
         app:tabMaxWidth="0dp"
         app:tabGravity="fill"
         app:tabBackground="@android:color/black"

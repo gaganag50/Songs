@@ -43,10 +43,10 @@ public class EnglishFragment extends android.support.v4.app.Fragment {
         singers.add(new Singer("green_day", R.drawable.green_day));
         singers.add(new Singer("justin", R.drawable.justin));
         singers.add(new Singer("shakira", R.drawable.shakira));
-        singers.add(new Singer("ed_sheeran", R.drawable.shakira));
+        singers.add(new Singer("ed_sheeran", R.drawable.ed_sheeran));
 
 
-        SingerAdapter singerAdapter = new SingerAdapter(getActivity(), singers);
+        SingerAdapter singerAdapter = new SingerAdapter(getActivity(), singers , R.color.english);
         final ListView listView = rootView.findViewById(R.id.listview);
         listView.setAdapter(singerAdapter);
 

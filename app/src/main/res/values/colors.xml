@@ -4,10 +4,15 @@
     <!--<color name="colorPrimaryDark">#303F9F</color>-->
     <!--<color name="colorAccent">#FF4081</color>-->
 
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#C00</color>
+    <color name="colorPrimaryDark">#C60</color>
     <color name="colorAccent">#FF4081</color>
     <color name = "tab_color" >#999900</color>
+
+    <color name="hindi">#FC9</color>
+
+    <color name="english">#F96</color>
+
 
 
 </resources>
