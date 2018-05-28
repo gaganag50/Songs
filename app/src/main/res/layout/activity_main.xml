@@ -30,6 +30,8 @@
         android:layout_height="wrap_content"
         app:tabSelectedTextColor="@android:color/white"
         app:tabTextColor="@android:color/darker_gray"
+
+        app:tabIndicatorColor="@color/tab_color"
         app:tabMode="fixed"
         app:tabMaxWidth="0dp"
         app:tabGravity="fill"
@@ -40,6 +42,7 @@
         android:background="?android:attr/selectableItemBackground"
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
+
         android:layout_height="match_parent" />
 
 
