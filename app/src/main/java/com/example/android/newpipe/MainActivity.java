@@ -7,7 +7,6 @@ import android.os.Bundle;
 
 
 public class MainActivity extends AppCompatActivity {
-    //private static String LOG_TAG = ".MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //Log.v("MainActivity" , LOG_TAG);
 
         ViewPager viewPager = findViewById(R.id.viewpager);
         SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());

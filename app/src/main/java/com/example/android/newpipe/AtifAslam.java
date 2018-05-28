@@ -55,7 +55,7 @@ public  class AtifAslam extends AppCompatActivity{
         final ArrayList<Song> songs_by_arjit = new ArrayList<>();
         songs_by_arjit.add(new Song("bakhudia_tumhi_ho" , R.raw.atif_aslam_bakhuda_tumhi_ho));
         songs_by_arjit.add(new Song("dil_diyan_gallan" , R.raw.atif_aslam_dil_diyan_gallan));
-        songs_by_arjit.add(new Song("doorie" , R.raw.atif_aslam_doorie));
+        //songs_by_arjit.add(new Song("doorie" , R.raw.atif_aslam_doorie));
         songs_by_arjit.add(new Song("kuch_is_tarah" , R.raw.atif_aslam_kuch_is_tarah));
         songs_by_arjit.add(new Song("main_rang_sharbato" , R.raw.atif_aslam_main_rang_sharbaton_ka));
         songs_by_arjit.add(new Song("pehli_dafa" , R.raw.atif_aslam_pehli_dafa));

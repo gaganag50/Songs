@@ -29,7 +29,6 @@ public class HindiFragment extends android.support.v4.app.Fragment {
         singers.add(new Singer("Atif Aslam", R.drawable.atif_aslam));
         singers.add(new Singer("Honey Singh", R.drawable.honey_singh));
         singers.add(new Singer("Armaan Malik", R.drawable.armaan_malik));
-
         singers.add(new Singer("Other", R.drawable.others));
 
 
