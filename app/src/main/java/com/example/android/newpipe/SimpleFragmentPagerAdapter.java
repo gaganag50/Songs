@@ -10,7 +10,7 @@ import android.support.v4.view.PagerAdapter;
 import android.view.View;
 
 class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
-    String[] songs = {"hindi" , "english"};
+    private String[] songs = {"hindi" , "english"};
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
 
@@ -34,4 +34,5 @@ class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         return songs[position];
     }
+
 }

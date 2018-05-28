@@ -9,16 +9,26 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
 
 public class EnglishFragment extends android.support.v4.app.Fragment {
+
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+
+
         View rootView = inflater.inflate(R.layout.main_word, container, false);
+
+
+
+
+
+
         ArrayList<Singer> singers = new ArrayList<Singer>();
         singers.add(new Singer("charlie", R.drawable.charlie));
 
