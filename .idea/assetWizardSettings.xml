@@ -35,8 +35,8 @@
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="cropped" value="true" />
-                                      <entry key="imageAsset" value="$PROJECT_DIR$/../pics/shakira.jpg" />
-                                      <entry key="outputName" value="shakira" />
+                                      <entry key="imageAsset" value="$PROJECT_DIR$/../pics_of_music/icons/image.png" />
+                                      <entry key="outputName" value="image" />
                                     </map>
                                   </option>
                                 </PersistentState>

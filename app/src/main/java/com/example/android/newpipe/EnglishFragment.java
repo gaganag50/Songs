@@ -32,6 +32,12 @@ public class EnglishFragment extends android.support.v4.app.Fragment {
         View rootView = inflater.inflate(R.layout.main_word, container, false);
 
 
+        View someView = rootView.findViewById(R.id.listview);// get Any child View
+
+        View root = someView.getRootView();
+
+//        android.R.color.holo_blue_dark
+        root.setBackgroundColor(getResources().getColor(R.color.english));
 
 
 
@@ -46,7 +52,7 @@ public class EnglishFragment extends android.support.v4.app.Fragment {
         singers.add(new Singer("ed_sheeran", R.drawable.ed_sheeran));
 
 
-        SingerAdapter singerAdapter = new SingerAdapter(getActivity(), singers , R.color.english);
+        SingerAdapter singerAdapter = new SingerAdapter(getActivity(), singers );
         final ListView listView = rootView.findViewById(R.id.listview);
         listView.setAdapter(singerAdapter);
 

@@ -17,12 +17,12 @@ import java.util.ArrayList;
 
 class SingerAdapter extends ArrayAdapter<Singer>{
 
-    private int mResourceColor;
 
-    public SingerAdapter(Activity view, ArrayList<Singer> singers , int colorResourceId){
+
+    public SingerAdapter(Activity view, ArrayList<Singer> singers){
 
         super(view , 0 , singers);
-        mResourceColor = colorResourceId;
+
     }
 
     @NonNull
@@ -42,9 +42,7 @@ class SingerAdapter extends ArrayAdapter<Singer>{
 
         textView.setText(singer.getSinger());
 
-        View view = listItemView.findViewById(R.id.text_container);
-        int color = ContextCompat.getColor(getContext() , mResourceColor);
-        view.setBackgroundColor(color);
+
 
         
         return listItemView;

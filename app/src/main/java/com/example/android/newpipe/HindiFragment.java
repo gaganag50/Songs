@@ -24,6 +24,17 @@ public class HindiFragment extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.main_word, container, false);
+
+
+        View someView = rootView.findViewById(R.id.listview);// get Any child View
+
+        View root = someView.getRootView();
+
+//        android.R.color.holo_blue_dark
+        root.setBackgroundColor(getResources().getColor(R.color.hindi));
+
+
+
         ArrayList<Singer> singers = new ArrayList<Singer>();
         singers.add(new Singer("Arjit Singh", R.drawable.arjit_singh));
         singers.add(new Singer("Atif Aslam", R.drawable.atif_aslam));
@@ -32,7 +43,7 @@ public class HindiFragment extends android.support.v4.app.Fragment {
         singers.add(new Singer("Other", R.drawable.others));
 
 
-        SingerAdapter singerAdapter = new SingerAdapter(getActivity(), singers , R.color.hindi);
+        SingerAdapter singerAdapter = new SingerAdapter(getActivity(), singers );
         final ListView listView = (ListView) rootView.findViewById(R.id.listview);
         listView.setAdapter(singerAdapter);
 

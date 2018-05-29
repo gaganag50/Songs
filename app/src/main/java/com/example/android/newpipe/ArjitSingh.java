@@ -120,6 +120,7 @@ public class ArjitSingh extends AppCompatActivity {
                     Log.v("ArjitSingh", "AUDIOFOCUS_REQUEST_GRANTED");
                     mMediaPlayer = MediaPlayer.create(ArjitSingh.this, song.getAudioResourceId());
                     mMediaPlayer.start();
+
                     mMediaPlayer.setOnCompletionListener(mOnCompletionListener);
 
                 }
