@@ -13,6 +13,8 @@
 
     <color name="english">#F96</color>
 
+    <color name = "screen_color">#FFC</color>
+
 
 
 </resources>
