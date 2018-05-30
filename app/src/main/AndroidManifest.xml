@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.newpipe">
 
+
+
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -35,6 +39,9 @@
 
 
         </activity>
+
+
+
 
         <activity android:name=".Charlie"
             android:label="Songs Of Charlie"
@@ -76,6 +83,7 @@
         <activity android:name=".ArjitSingh"
             android:label="Songs of ArjitSingh"
             android:parentActivityName=".HindiActivity">
+
             <meta-data android:name="com.example.android.PARENT_ACTIVITY"
                 android:value="com.example.android.MainActivity"/>
         </activity>
@@ -107,7 +115,6 @@
             <meta-data android:name="com.example.android.PARENT_ACTIVITY"
                 android:value="com.example.android.MainActivity"/>
         </activity>
-
 
 
     </application>
