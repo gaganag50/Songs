@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">NewPipe</string>
+    <string name="app_name">Bang Bang</string>
+    <string name="subtitle_name">Rock The Party</string>
+    <string name="action_settings">Settings</string>
+    <string name="singer">singer</string>
+    <string name="images_of_singers">images of singers</string>
+    <string name="song_name">song_name</string>
+
+
 </resources>

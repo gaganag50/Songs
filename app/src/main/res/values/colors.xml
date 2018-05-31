@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--<color name="colorPrimary">#3F51B5</color>-->
-    <!--<color name="colorPrimaryDark">#303F9F</color>-->
-    <!--<color name="colorAccent">#FF4081</color>-->
-
-    <color name="colorPrimary">#C00</color>
+    <color name="colorPrimary">#000</color>
     <color name="colorPrimaryDark">#C60</color>
     <color name="colorAccent">#FF4081</color>
-    <color name = "tab_color" >#999900</color>
-
+    <color name = "tab_indicator_color">#FF8C00</color>
     <color name="hindi">#FC9</color>
-
     <color name="english">#FCF</color>
 
+    <!--light yellow for internal screen-->
     <color name = "screen_color">#FFC</color>
 
 
 
-
-    <color name="holo_blue_dark">#ff0099cc</color>
 
 
 

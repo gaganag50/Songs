@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="asuth"/>
+        android:text="@string/song_name"/>
 
     <ImageView android:id="@+id/play_btn"
         android:layout_marginLeft="10dp"
@@ -21,5 +21,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_play_arrow_black_24dp"/>
+
+    <SeekBar
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:id="@+id/seekBar"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+
+        />
+
 
 </RelativeLayout>

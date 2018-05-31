@@ -5,8 +5,6 @@ import android.annotation.TargetApi;
 import android.app.ActivityManager;
 import android.content.ComponentName;
 import android.content.Context;
-
-import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Build;
@@ -15,11 +13,10 @@ import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
-
 import android.widget.ListView;
+import android.widget.SeekBar;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -56,7 +53,7 @@ public class ArjitSingh extends AppCompatActivity {
 //        }
 //    };
 
-
+    private SeekBar seekBar;
     private MediaPlayer mMediaPlayer;
     private AudioManager mAudioManager;
     private AudioManager.OnAudioFocusChangeListener mOnAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
@@ -108,7 +105,7 @@ public class ArjitSingh extends AppCompatActivity {
         final ListView listView = findViewById(R.id.listview);
         SongAdapter adapter = new SongAdapter(ArjitSingh.this, songs_by_arjit);
         listView.setAdapter(adapter);
-
+        seekBar = findViewById(R.id.seekBar);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -126,11 +123,11 @@ public class ArjitSingh extends AppCompatActivity {
                     mMediaPlayer = MediaPlayer.create(ArjitSingh.this, song.getAudioResourceId());
                     mMediaPlayer.start();
 
-                    Log.v("asuhthu" , "nstnasoheuanutehostauhashueosathu");
+                    Log.v("asuhthu", "nstnasoheuanutehostauhashueosathu");
 
                     mMediaPlayer.setOnCompletionListener(mOnCompletionListener);
 
-                    Log.v("asuhthu1" , "nstnasoheuanutehostauhashueosathu1");
+                    Log.v("asuhthu1", "nstnasoheuanutehostauhashueosathu1");
 
 
                 }
@@ -138,19 +135,18 @@ public class ArjitSingh extends AppCompatActivity {
         });
 
 
-
     }
 
-    public void onPause(){
+    public void onPause() {
 
-        Log.v("asuhthu2" , "nstnasoheuanutehostauhashueosathu2");
+        Log.v("asuhthu2", "nstnasoheuanutehostauhashueosathu2");
 
         super.onPause();
         Context context = getApplicationContext();
         ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
-       List<ActivityManager.RunningTaskInfo> taskInfo = am.getRunningTasks(1);
+        List<ActivityManager.RunningTaskInfo> taskInfo = am.getRunningTasks(1);
 
-        Log.v("asuhthu3" , "nstnasoheuanutehostauhashueosathu3");
+        Log.v("asuhthu3", "nstnasoheuanutehostauhashueosathu3");
 
 
         if (!taskInfo.isEmpty()) {
@@ -162,11 +158,11 @@ public class ArjitSingh extends AppCompatActivity {
         }
     }
 
-    public void StopPlayer(){
+    public void StopPlayer() {
 
-        Log.v("asuhthu4" , "nstnasoheuanutehostauhashueosathu4");
+        Log.v("asuhthu4", "nstnasoheuanutehostauhashueosathu4");
 
-        if(mMediaPlayer!=null && mMediaPlayer.isPlaying()){//If music is playing already
+        if (mMediaPlayer != null && mMediaPlayer.isPlaying()) {//If music is playing already
             mMediaPlayer.stop();//Stop playing the music
         }
     }
@@ -174,7 +170,7 @@ public class ArjitSingh extends AppCompatActivity {
 
     @Override
     protected void onStop() {
-        Log.v("asuhthu5" , "nstnasoheuanutehostauhashueosathu5");
+        Log.v("asuhthu5", "nstnasoheuanutehostauhashueosathu5");
 
         super.onStop();
         releaseMediaPlayer();
@@ -183,7 +179,7 @@ public class ArjitSingh extends AppCompatActivity {
     private void releaseMediaPlayer() {
         if (mMediaPlayer != null) {
 
-            Log.v("asuhthu8" , "nstnasoheuanutehostauhashueosathu9");
+            Log.v("asuhthu8", "nstnasoheuanutehostauhashueosathu9");
 
             mMediaPlayer.release();
             mMediaPlayer = null;
